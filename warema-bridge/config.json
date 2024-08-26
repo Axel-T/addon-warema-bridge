@@ -1,6 +1,6 @@
 {
   "name": "Warema Bridge",
-  "version": "dev",
+  "version": "1.0.0",
   "slug": "warema-bridge",
   "description": "Control your Warema WMS system",
   "arch": ["aarch64", "amd64", "armv7", "i386"],
@@ -8,7 +8,7 @@
   "url": "https://github.com/dbffm/addon-warema-bridge",
   "boot": "auto",
   "hassio_api": true,
-  "image": "dbffm/addon-warema-bridge",
+  "image": "dbffm/addon-warema-bridge:latest",
   "options": {
     "mqtt_server": null,
     "mqtt_user": null,
