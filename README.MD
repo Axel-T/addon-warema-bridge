@@ -4,7 +4,7 @@ This Home Assistant add-on allows users to control Warema WMS (Wireless Mains Su
 
 ## About This Fork
 
-This repository is a fork of the original Warema Bridge add-on maintained by [giannelo](https://github.com/giannelo/addon-warema-bridge). The original add-on is an excellent solution for integrating Warema devices with Home Assistant; however, there were issues when connecting to an external MQTT server that required adjustments to the configuration.
+This repository is a fork of the original Warema Bridge add-on maintained by [giannello](https://github.com/giannello/addon-warema-bridge). The original add-on is an excellent solution for integrating Warema devices with Home Assistant; however, there were issues when connecting to an external MQTT server that required adjustments to the configuration.
 
 ### Issue with MQTT Server in the Original Repository
 
@@ -58,5 +58,5 @@ To control WMS devices, the add-on must be configured with the correct network p
 
 Follow the steps displayed in the console to retrieve your network configuration. Once the correct parameters (Channel, PanId, Key) are discovered, restart the add-on with the new configuration.
 
-Credits and Contribution
-This fork is based on the original add-on created by [giannelo](https://github.com/giannelo/addon-warema-bridge). Additionally, some of the information in this README.md was inspired by a fork from [santam85](https://github.com/santam85/addon-warema-wms), which provided detailed configuration and usage instructions.
+## Credits and Contribution
+This fork is based on the original add-on created by [giannello](https://github.com/giannello/addon-warema-bridge). Additionally, some of the information in this README.md was inspired by a fork from [santam85](https://github.com/santam85/addon-warema-wms), which provided detailed configuration and usage instructions.
