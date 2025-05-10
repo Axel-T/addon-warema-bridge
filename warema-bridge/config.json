@@ -8,7 +8,7 @@
   "url": "https://github.com/Axel-T/addon-warema-bridge",
   "boot": "auto",
   "hassio_api": true,
-  "image": "dbffm/addon-warema-bridge",
+  "image": "Axel-T/addon-warema-bridge",
   "options": {
     "mqtt_server": null,
     "mqtt_user": null,
