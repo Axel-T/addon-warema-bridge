@@ -2,7 +2,7 @@
   "name": "Warema Bridge",
   "version": "dev",
   "slug": "warema-bridge",
-  "description": "Control your Warema WMS system",
+  "description": "Control your Warema WMS system 2E",
   "arch": ["aarch64", "amd64", "armv7", "i386"],
   "startup": "services",
   "url": "https://github.com/Axel-T/addon-warema-bridge",
