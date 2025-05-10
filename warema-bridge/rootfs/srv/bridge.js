@@ -97,6 +97,28 @@ function registerDevice(element) {
         tilt_max: 100,
       }
       break
+    // Adding Code for 2E: Actuator 230 V UP (basically copy from 21 to 2E...)
+    case 2E:
+      model = 'Actuator 230 V UP'
+      payload = {
+        ...base_payload,
+        device: {
+          ...base_device,
+          model: model
+        },
+        position_open: 0,
+        position_closed: 100,
+        command_topic: 'warema/' + element.snr + '/set',
+        position_topic: 'warema/' + element.snr + '/position',
+        tilt_status_topic: 'warema/' + element.snr + '/tilt',
+        set_position_topic: 'warema/' + element.snr + '/set_position',
+        tilt_command_topic: 'warema/' + element.snr + '/set_tilt',
+        tilt_closed_value: -100,
+        tilt_opened_value: 100,
+        tilt_min: -100,
+        tilt_max: 100,
+      }
+      break
     case 25:
       model = 'Vertical awning'
       payload = {
