@@ -41,7 +41,15 @@ function registerDevice(element) {
 
   var model
   var payload
-  switch (parseInt(element.type)) {
+  
+  // adding some console statement for easier debugging the log...
+  console.log("Device type:", element.type);
+  
+  // the element.type is expected to be a number, you should convert it to a string to ensure it matches the "2E" case:
+  // change the following from the initial code...
+  // 		switch (parseInt(element.type)) {
+  // to the next line...
+  switch (element.type.toString()) {
     case 6:
       model = 'Weather station'
       payload = {
@@ -98,7 +106,7 @@ function registerDevice(element) {
       }
       break
     // Adding Code for 2E: Actuator 230 V UP (basically copy from 21 to 2E...)
-    case 2E:
+    case "2E":
       model = 'Actuator 230 V UP'
       payload = {
         ...base_payload,
