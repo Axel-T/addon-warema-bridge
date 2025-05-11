@@ -1,6 +1,6 @@
 # Warema WMS Add-on for Home Assistant
 
-Just another fork of the addon-warena-bridge. I did this to add 'Actuator 230 V UP' as a device for my particula setup at home. Multiple Handheld single channel recivers and the 'new' actuator.
+Just another fork of the addon-warena-bridge. I did this to add 'Actuator 230 V UP' as a device for my particular setup at home. Multiple Handheld single channel recivers and the 'new' actuator.
 
 This Home Assistant add-on allows users to control Warema WMS (Wireless Mains Supply) equipment, such as blinds, awnings, and other supported devices, directly from Home Assistant. To use this add-on, you will need a [Warema WMS stick](https://www.warema.com/en/control-systems/radio-systems/supplementary-components/).
 
