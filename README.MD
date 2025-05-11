@@ -43,15 +43,17 @@ At loglevel you would find after the scanning section of your stick the message:
 Indicating the missing functionality for the 'Actuator 230 V UP' from Warema.
 
 ### Root Cause and Solution - 3. Fork
-Looking into the code of the original addon you find the reference to warema-wms-venetian-blinds java script library. This is also referenced by the second fork. Looking up the warema-wms-venetian-blinds library at npm you find, that 
+Looking into the code of the original addon, you will find the reference to warema-wms-venetian-blinds java script library. This is also referenced by the second fork. Looking up the warema-wms-venetian-blinds library at npm you find, that the version change from 1.1.18 to 2.0.5 and with 2.0.5 the support of device type '2E' aka 'Actuator 230 V UP' from Warema was added. So the mandatory changes in the dependecies where made and the device type '2E' - 'Actuator 230 V UP' was added as switch cause in the code.
+Also the mandatory docker image was created.
 
-## Installation
+
+## Installation (stays the same...)
 
 1. Install the add-on from the Home Assistant add-on store.
 2. Configure the add-on using the parameters listed below.
 3. Start the add-on to begin controlling your Warema devices.
 
-## Configuration Options
+## Configuration Options (stays the same...)
 
 - **`MQTT_SERVER`**: MQTT server URL (e.g., `mqtt://localhost:1883`).
 - **`MQTT_USER`**: Username for MQTT server authentication.
@@ -64,7 +66,7 @@ Looking into the code of the original addon you find the reference to warema-wms
 - **`WMS_SERIAL_PORT`**: Device path for the WMS USB Key (Default: `/dev/ttyUSB0`).
 - **`LOG_LEVEL`**: Log level, one of `[error, warn, info, http, verbose, debug, silly]` (Default: `info`).
 
-### WMS Network Parameters Discovery
+### WMS Network Parameters Discovery (stays the same...)
 
 To control WMS devices, the add-on must be configured with the correct network parameters. These can be discovered by starting the add-on with a `PAN_ID` set to `FFFF` and following the instructions:
 
@@ -74,4 +76,7 @@ To control WMS devices, the add-on must be configured with the correct network p
 Follow the steps displayed in the console to retrieve your network configuration. Once the correct parameters (Channel, PanId, Key) are discovered, restart the add-on with the new configuration.
 
 ## Credits and Contribution
-This fork is based on the original add-on created by [giannello](https://github.com/giannello/addon-warema-bridge). Additionally, some of the information in this README.md was inspired by a fork from [santam85](https://github.com/santam85/addon-warema-wms), which provided detailed configuration and usage instructions.
+This fork is based on the original add-on created by [giannello](https://github.com/giannello/addon-warema-bridge) as well as the fork from [dbffm](https://github.com/dbffm/addon-warema-bridge)
+I left the reference to the README.md by a fork from [santam85](https://github.com/santam85/addon-warema-wms), which provided detailed configuration and usage instructions as I used his work as well.
+Thanks a lot to all previous authors!
+Axel-T
